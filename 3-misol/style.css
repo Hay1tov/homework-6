@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 30px;
+  font-family: Kalam;
+}
+
+.container {
+  max-width: 1024px;
+  height: 800px;
+  width: 100%;
+  margin: 50px auto;
+  background-color: rgb(193, 231, 244);
+  padding: 3px;
+}
+
+.element {
+  display: flex;
+  flex-direction: row;
+}
+
+.child1 {
+  width: 612px;
+  height: 800px;
+  background-color: rgb(224, 68, 99);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2 {
+  width: 612px;
+  height: 800px;
+  background-color: rgb(221, 139, 77);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+
+  .element {
+    flex-direction: column;
+  }
+
+  .child1 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .child2 {
+    width: 100%;
+    height: 400px;
+  }
+}
